@@ -1,0 +1,25 @@
+{
+  "jobsOpsToolsApp": {
+    "jobsUser": {
+      "home": {
+        "title": "Jobs Users",
+        "createLabel": "Create a new Jobs User",
+        "createOrEditLabel": "Create or edit a Jobs User",
+        "notFound": "No Jobs Users found"
+      },
+      "created": "A new Jobs User is created with identifier {{ param }}",
+      "updated": "A Jobs User is updated with identifier {{ param }}",
+      "deleted": "A Jobs User is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Jobs User {{ id }}?"
+      },
+      "detail": {
+        "title": "Jobs User"
+      },
+      "babelUserId": "Babel User Id",
+      "email": "Email",
+      "phone": "Phone",
+      "permission": "Permission"
+    }
+  }
+}

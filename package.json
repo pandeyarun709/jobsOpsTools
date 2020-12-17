@@ -1,7 +1,7 @@
 {
   "name": "jobs-ops-tools",
   "version": "0.0.1-SNAPSHOT",
-  "description": "Description for jobsOpsTools",
+  "description": "Description for JobsOpsTools",
   "private": true,
   "license": "UNLICENSED",
   "cacheDirectories": [

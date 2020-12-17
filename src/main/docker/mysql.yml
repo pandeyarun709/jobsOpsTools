@@ -3,7 +3,7 @@ services:
   jobsopstools-mysql:
     image: mysql:8.0.20
     # volumes:
-    #     - ~/volumes/jhipster/jobsOpsTools/mysql/:/var/lib/mysql/
+    #     - ~/volumes/jhipster/JobsOpsTools/mysql/:/var/lib/mysql/
     environment:
       - MYSQL_USER=root
       - MYSQL_ALLOW_EMPTY_PASSWORD=yes

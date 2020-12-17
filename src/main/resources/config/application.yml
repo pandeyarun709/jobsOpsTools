@@ -59,7 +59,7 @@ management:
 
 spring:
   application:
-    name: jobsOpsTools
+    name: JobsOpsTools
   profiles:
     # The commented value for `active` can be replaced with valid Spring profiles to load.
     # Otherwise, it will be filled in by maven when building the JAR file
@@ -141,11 +141,11 @@ jhipster:
   #     allow-credentials: true
   #     max-age: 1800
   mail:
-    from: jobsOpsTools@localhost
+    from: JobsOpsTools@localhost
   swagger:
     default-include-pattern: /api/.*
-    title: jobsOpsTools API
-    description: jobsOpsTools API documentation
+    title: JobsOpsTools API
+    description: JobsOpsTools API documentation
     version: 0.0.1
     terms-of-service-url:
     contact-name:

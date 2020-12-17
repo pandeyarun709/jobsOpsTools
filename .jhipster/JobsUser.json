@@ -1,0 +1,39 @@
+{
+  "name": "JobsUser",
+  "fields": [
+    {
+      "fieldName": "babelUserId",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String",
+      "fieldValidateRules": ["pattern"],
+      "fieldValidateRulesPattern": "^(.+)@(.+)$"
+    },
+    {
+      "fieldName": "phone",
+      "fieldType": "Long",
+      "fieldValidateRules": ["min", "max"],
+      "fieldValidateRulesMin": "1000000000",
+      "fieldValidateRulesMax": "9999999999"
+    },
+    {
+      "fieldName": "permission",
+      "fieldType": "Permission",
+      "fieldValues": "ADMIN_ACCESS,VIEW_ONLY_ACCESS,WRITE_ACCESS"
+    }
+  ],
+  "relationships": [],
+  "changelogDate": "20201217085547",
+  "entityTableName": "jobs_user",
+  "dto": "mapstruct",
+  "pagination": "infinite-scroll",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": ["JobsOpsTools"]
+}
