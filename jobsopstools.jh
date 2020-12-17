@@ -1,0 +1,33 @@
+entity JobsUser {
+	babelUserId Long,
+    email String pattern(/^(.+)@(.+)$/),
+    phone Long min(1000000000) max(9999999999),
+    permission Permission
+}
+
+enum Permission {
+    ADMIN_ACCESS, 
+    VIEW_ONLY_ACCESS, 
+    WRITE_ACCESS
+}
+
+
+application {
+  config {
+    baseName JobsOpsTools
+    applicationType monolith
+    serverPort 9001
+    devDatabaseType mysql
+    prodDatabaseType mysql
+    clientFramework react
+    clientPackageManager npm
+    authenticationType jwt
+    buildTool maven
+    enableSwaggerCodegen true
+    packageName com.quikr.jobsopstools
+  }
+  entities *
+  dto * with mapstruct
+  paginate * with infinite-scroll
+  service all with serviceImpl
+}
