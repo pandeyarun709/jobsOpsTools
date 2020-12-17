@@ -47,6 +47,7 @@ public class CacheConfiguration {
             createCache(cm, com.quikr.jobsopstools.domain.User.class.getName());
             createCache(cm, com.quikr.jobsopstools.domain.Authority.class.getName());
             createCache(cm, com.quikr.jobsopstools.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.quikr.jobsopstools.domain.JobsUser.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
